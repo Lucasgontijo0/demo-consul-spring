@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  stubby4j:
+    image: gontijo/stubby4j
+    ports:
+      - "8882:8882"
+    environment:
+      STUBBY_PORT: 8882
+    volumes:
+      - ./stub:/usr/local/stub
+
+  consul:
+    image: consul
+    ports:
+      - 8500:8500

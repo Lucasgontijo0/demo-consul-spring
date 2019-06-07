@@ -1,0 +1,27 @@
+- description: Find first Customer.
+  request:
+    method: GET
+    url: ^/customer/1$
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    body: >
+      {
+        "id": 1,
+        "name": "Lucas"
+      }
+
+- description: Find second customer.
+  request:
+    method: GET
+    url: ^/customer/2$
+  response:
+    status: 200
+    headers:
+      content-type: application/json
+    body: >
+      {
+        "id": "22",
+        "name": "Lucas Gontijo"
+      }
