@@ -14,3 +14,17 @@ Para inicializar os containers (Consul e Mocks) utilize o comando:
 O consul estará acessível na porta **8500**, como foi definido no docker-compose.yml.
 
 ### Consul
+O consul pode ser acessado na url **localhost:8085**.
+
+Iremos criar o parâmetro utilizando a aba **key/value**
+<img width="525" alt="Screen Shot 2019-06-22 at 10 36 49" src="https://user-images.githubusercontent.com/31103149/59964796-e7d8bb00-94db-11e9-8298-f3981e7b1ccd.png">
+<img width="1672" alt="Screen Shot 2019-06-22 at 10 37 37" src="https://user-images.githubusercontent.com/31103149/59964797-e7d8bb00-94db-11e9-8430-40174020e269.png">
+
+Iremos criar a configuração através do seguinte padrão **config/APPLICATION_NAME/KEY**
+<img width="1189" alt="Screen Shot 2019-06-22 at 10 40 33" src="https://user-images.githubusercontent.com/31103149/59964799-e7d8bb00-94db-11e9-9e9a-5932ac372b1a.png">
+O nome da aplicação deve ser definido no **application.properties**
+<img width="417" alt="Screen Shot 2019-06-22 at 10 39 03" src="https://user-images.githubusercontent.com/31103149/59964798-e7d8bb00-94db-11e9-8f96-432b8445ebfa.png">
+
+Após criada a configuração podemos ver a mesma chamada retornando valores diferentes.
+<img width="450" alt="Screen Shot 2019-06-22 at 10 43 59" src="https://user-images.githubusercontent.com/31103149/59964800-e8715180-94db-11e9-94c4-eb230a4296fe.png">
+<img width="428" alt="Screen Shot 2019-06-22 at 10 46 01" src="https://user-images.githubusercontent.com/31103149/59964801-e8715180-94db-11e9-8f6b-ffca85484509.png">
